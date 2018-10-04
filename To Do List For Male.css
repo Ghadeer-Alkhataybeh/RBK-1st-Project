@@ -1,0 +1,46 @@
+/*the of the gentelemen page*/
+/*background image for the gentelemen page*/
+html{
+	
+	background-image: url(https://www.9or.top/wp-content/uploads/2018/07/JgkNfU2b0A8ZfciTx7IJb263880930.jpg);
+	
+}
+h1{
+	color: #87cefa;
+	text-align-last: center;
+	font-size: 80px;
+}
+
+input{
+	margin-left: 20px
+	
+}
+
+li {
+	list-style: none;
+	
+}
+/*using flex to display both buttons in the same line*/
+.container{
+	display: flex;
+	font-size: 30px
+
+}
+.left{
+	width: 50%;
+	margin-left: 5%;
+}
+.right{
+
+}
+/*sizing both buttons*/
+.input{
+	padding: 10px 30px;
+}
+.in{
+	padding: 10px 30px;
+}
+#introduction{
+	font-size: 50px;
+	color: #87cefa;
+}

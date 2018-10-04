@@ -1,0 +1,48 @@
+/*the of the ladies page*/
+/*background image for the ladies page*/
+html{
+	background-image: url(https://problemss.com/wp-content/uploads/2018/05/1744-3.jpg);
+}
+h1{
+	color: #c10385;
+	text-align-last: center;
+	font-size: 80px;
+
+}
+
+input{
+	margin-left: 20px
+	
+
+}
+
+li {
+	list-style: none;
+	
+
+}
+/*using flex to display both buttons in the same line*/
+.container{
+	display: flex;
+	font-size: 30px
+	
+
+}
+.left{
+	width: 50%;
+	margin-left: 5%;
+}
+.right{
+
+}
+/*sizing both buttons*/
+.input{
+	padding: 10px 30px;
+}
+.in{
+	padding: 10px 30px;
+}
+#introduction{
+	font-size: 50px;
+	color: #c10385;
+}

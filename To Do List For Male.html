@@ -1,0 +1,50 @@
+<html>
+<head>
+  <title>To Do List</title>
+  <link href="To Do List For Male.css" rel="stylesheet">
+</head>
+<body>
+  <div>
+    <h1>My To Do List</h1> 
+    <hr>
+    <center>
+      <!-- introduction paragraph to the linked page for gentlemen with some music to play using audio tag, centerizing them with center tag -->
+      <p id="introduction">Good morning handsome, what is your plans for today??Would you like some music to calm you down, click play??<br><audio controls style="width: 200px;"  controls>
+       <source src="Chopin-ballade-4.mp3" type="audio/mp3">
+       </audio> </p>
+       <!-- Morning Tip using an array and setinterval function to change it every 10 sec -->       
+       <h2>Morning Tip</h2><br>
+        <h2 class="elem">Yesterday you said tomorrow. Just do it.</h2></center>        
+      </div> 
+      <center>
+        <!-- two divs inside one container to allow us to use the flex display -->
+        <div class="container">
+          <div class="left">
+            <input class="input" type="text" />
+            <button class="input"id= "add">New Plan</button><br>
+          </div>
+          <div class="right">
+            <input class="in" type="text" />
+            <button class="in"  id= "ad">Future Plan</button><br>
+          </div>
+        </div>
+      </center>
+      
+      <!-- JQuery Library link -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <!-- connection between html file and it's own js file -->
+      <script src="To Do List male.js"></script>
+      <script>
+       /* the first button to the left takes a single input each time and assign it to a checkbox list allowing the user to define the activity time for the current day*/
+        $("#add").click(function(){
+          $('.left').append('<li>' +'<input type="checkbox" >' + $('.input').val()+'<span class="time">'+'<input type="time" name="bday">'+ '</li>' )
+        });
+        /* the second button to the right takes a single input each time and assign it to a checkbox list allowing the user to define the activity date for future plans*/
+        $("#ad").click(function(){
+          $('.right').append('<li>' +'<input type="checkbox" >' + $('.in').val() + '<span class="time">'+'<input type="date" name="bday">'+ '</li>' );
+        })
+      </script>
+    </body>
+    </html>
+
+
